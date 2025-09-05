@@ -1059,7 +1059,7 @@
     text-transform: lowercase;
   }
   .header-shadow {
-    box-shadow: 2px 3px 30px 0 rgba(180, 206, 222, 0.10);
+    box-shadow: 2px 3px 30px 0 rgba(180, 206, 222, 0.1);
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -2975,10 +2975,11 @@
 }
 @font-face {
   font-family: "panton-trialbold";
-  src: url("../src/fonts/panton-trial-bold-webfont.woff2") format("woff2"),
-    url("../src/fonts/panton-trial-bold-webfont.woff") format("woff");
-  font-weight: normal;
+  src: url("../fonts/panton-trial-bold-webfont.woff2") format("woff2"),
+    url("../fonts/panton-trial-bold-webfont.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 @layer base {
   :root {
@@ -2986,7 +2987,7 @@
     --foreground: #545454;
     --accent: #f3f9fe;
     --deemed: #363636;
-    --muted-blue: #CEDFF0;
+    --muted-blue: #cedff0;
     --accent-light-green: #eefdf9;
     --accent-dark-sky: #6498ca;
     --accent-dark-green: #69cfb2;
