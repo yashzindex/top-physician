@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Physician</title>
+
+    <!-- Meta -->
+    <meta name="description" content="" />
+    <meta name="title" content="Top Physician" />
+    <meta name="keywords" content="" />
+
+    <!-- SEO & Social -->
+    <link rel="canonical" href="https://example.com/your-page" />
+    <meta property="og:title" content="Your Page Title" />
+
+    <!-- Open Graph (for Facebook etc) -->
+    <meta property="og:title" content="Your Page Title" />
+    <meta property="og:description" content="Page description" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Page Title" />
+    <meta name="twitter:description" content="Page description" />
+    <meta name="twitter:image" content="https://example.com/image.jpg" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./src/image/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./src/image/favicon.svg" />
+    <link rel="shortcut icon" href="./src/image/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/image/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Top Physician" />
+    <link rel="manifest" href="./src/image/site.webmanifest" />
+
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <link href="./src/css/input.css" rel="stylesheet" /> -->
+
+    <!-- ✅ Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <!-- font-family: "Lexend", sans-serif; -->
+  </head>
+  <body>
+    <!-- header -->
+    <header class="absolute top-0 left-0 w-full z-50">
+      <div class="container mx-auto">
+        <div
+          class="w-full header-shadow sm:bg-white py-5 sm:px-7 flex sm:justify-between items-center rounded-b-3xl"
+        >
+          <!-- Hamburger icon for mobile -->
+          <button
+            class="sm:hidden bg-white relative z-50 group size-11 p-2.5 border border-[#D7E6F5] flex flex-col justify-center items-center rounded-2xl ham-shadow"
+            id="menu-toggle"
+            aria-label="Toggle menu"
+          >
+            <img
+              src="./src/image/ham-open.svg"
+              alt="oppen"
+              class="block group-[.open]:hidden"
+            />
+            <img
+              src="./src/image/ham-close.svg"
+              alt="oppen"
+              class="hidden group-[.open]:block"
+            />
+          </button>
+
+          <!-- logo -->
+          <a
+            href="#"
+            class="block max-sm:ml-auto max-sm:mr-auto w-40 md:w-44 2xl:w-52 relative z-50"
+          >
+            <img
+              src="./src/image/logo-head.png"
+              alt="logo"
+              class="object-contain h-full w-full"
+            />
+          </a>
+
+          <!-- menu links -->
+          <div
+            id="nav-menu"
+            class="z-40 max-sm:fixed max-sm:pt-20 max-sm:top-0 max-sm:w-[90%] max-sm:h-full max-sm:rounded-r-2xl max-sm:bg-white max-sm:-left-full sm:relative transition-all duration-300"
+          >
+            <ul
+              class="h-full max-sm:border-t max-sm:border-[#E8EFF5] max-sm:pt-10 max-sm:pl-5 flex max-sm:flex-col gap-12 md:gap-10 xl:gap-[60px] max-sm:mx-5"
+            >
+              <li>
+                <a
+                  href="#Resources"
+                  class="text-deemed text-17 capitalize hover:text-accent-dark-sky transition-colors duration-300"
+                  >Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#login"
+                  class="bg-accent-dark-green text-white text-17 md:text-lg font-semibold capitalize rounded-2xl log-in-btn-shadow px-9 py-3.5 hover:bg-accent-dark-sky transition-opacity duration-300"
+                  >log in</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <div class="bg-[#E8F4FF] relative pt-16 md:pt-28 lg:pt-40">
+      <div class="container">
+        <div class="relative grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-6 xl:col-span-5">
+            <div class="relative max-lg:text-center z-2 pb-5">
+              <div class="mb-3 md:mb-6 pt-9 2xl:pt-20 2xl:pr-0">
+                <h1
+                  class="font-panton text-background max-xxs:text-4xl text-5.5 md:text-6xl xl:text-[68px] xxl:text-6.5 2xl:text-7.5 !font-extrabold capitalize !leading-tight"
+                >
+                  A smarter way to prepare for the RACP Exam
+                </h1>
+              </div>
+              <div class="mb-8 xl:mb-12 2xl:mb-14 max-w-lg max-lg:mx-auto">
+                <p class="text-deemed text-17 xl:text-xl leading-170">
+                  Cut study time by up to 50% with the brand new program already
+                  helping hundreds of junior doctors achieve the best results.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="inline-block bg-accent-dark-green hover:bg-accent-dark-sky transition-all duration-300 py-3.5 px-8 xl:py-4 capitalize text-white text-lg xxl:text-22 font-semibold rounded-2xl xxl:rounded-20"
+                >Start for Free!</a
+              >
+            </div>
+          </div>
+          <div class="lg:col-span-6 xl:col-span-7 max-lg:-mx-[18px]">
+            <div class="h-full w-full  relative z-2">
+              <img
+                src="./src/image/banner-desktop.png"
+                alt="Banner Image"
+                class="object-cover sm:w-full sm:h-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- banner arrow -->
+        <div
+          class="w-12 md:w-20 xxl:w-28 absolute max-sm:top-[50%] max-lg:top-[35%] lg:bottom-5 xl:bottom-10 xxl:bottom-20 2xl:bottom-32 left-2 lg:left-[30%]"
+        >
+          <img
+            src="./src/image/banner-arrow.svg"
+            alt="Banner Arrow"
+            class="w-full h-full"
+          />
+        </div>
+
+        <!-- banenr two round -->
+        <div
+          class="w-8 xl:w-12 absolute max-xxs:bottom-[35%] bottom-[40%] lg:bottom-[55%] xl:bottom-[50%] 2xl:bottom-[43%] right-8 max-xl:right-10 xxl:left-[37%] 2xl:left-[37%]"
+        >
+          <img
+            src="./src/image/banner-two-round.svg"
+            alt="wo round"
+            class="object-cover"
+          />
+        </div>
+
+        <!-- banner one round -->
+        <div
+          class="w-4 absolute top-[20%] left-[5%] lg:top-[17%] lg:left-[35%]"
+        >
+          <img
+            src="./src/image/banner-one-round.png"
+            alt="one round"
+            class="object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- top right -->
+      <div class="absolute top-0 right-0 w-full max-w-md">
+        <img
+          src="./src/image/banner-top-right.svg"
+          alt="top right"
+          class="w-full h-full"
+        />
+      </div>
+
+      <!-- banner one round right -->
+      <div
+        class="w-4 absolute bottom-[17%] right-3 2xl:right-[4%] max-xl:hiden"
+      >
+        <img
+          src="./src/image/banner-one-round.png"
+          alt="one round"
+          class="object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Top Physician Can Change That -->
+    <div
+      class="relative pt-12 sm:pt-14 md:pt-20 xxl:pt-32 2xl:pt-40 pb-10 md:14 xl:pb-20"
+    >
+      <div class="container">
+        <div class="w-full max-w-7xl xxl:px-6 mx-auto">
+          <div
+            class="relative text-center max-sm:px-10 py-12 sm:py-16 xl:py-24"
+          >
+            <div
+              class="w-full sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl xxl:max-w-5xl 2xl:px-10 mx-auto"
+            >
+              <div class="mb-5 lg:mb-8">
+                <p class="leading-relaxed text-xl xl:text-2xl 2xl:text-26">
+                  Every year, trainees pour hours into the wrong materials never
+                  certain if they&apos;re studying what really counts. When the
+                  RACP exam defines your future, you can&apos;t afford to
+                  gamble.
+                </p>
+              </div>
+
+              <h2 class="text-background capitalize font-bold text-22 md:text-2xl xxl:text-3xl">
+                Top Physician Can Change That
+              </h2>
+            </div>
+
+            <!-- back image -->
+            <div class="w-full absolute top-0 bottom-0 left-0 right-0 -z-1">
+              <img
+                src="./src/image/second-section.png"
+                alt="secong image"
+                class="w-full h-full hidden sm:block"
+              />
+              <img
+                src="./src/image/second-section-mobile.png"
+                alt="secong image"
+                class="w-full h-full block sm:hidden"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Built by doctors, backed by results -->
+    <div class="relative py-10 sm:py-20 md:py-20 xl:py-24 2xl:py-32">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-24 lg:gap-8 xl:gap-0 2xl:px-6"
+        >
+          <div class="max-sm:w-full max-lg:mx-auto lg:col-span-6 xl:col-span-7">
+            <!-- <div class="relative h-full w-full"> -->
+            <div
+              class="relative bg-[#CBDFF2] rounded-20 md:rounded-4xl max-sm:w-full max-sm:min-h-[355px] sm:w-[450px] sm:h-[450px] xxl:!size-[522px] flex justify-center items-end xl:mt-7 xl:ml-7"
+            >
+              <!-- doctor image -->
+              <div class="w-60 md:w-60 sm:w-72 xxl:w-[350px]">
+                <img
+                  src="./src/image/doctor.svg"
+                  alt="doctor"
+                  class="w-full h-full"
+                />
+              </div>
+
+              <!-- gradient box -->
+              <div
+                class="w-[95%] h-[80%] rounded-20 md:rounded-4xl absolute -top-5 -left-5 xxl:-top-7 xxl:-left-7 -z-1 bg-gradient-to-r from-[#EEFDF9] to-[#EFF7FF] max-xl:hidden"
+              ></div>
+
+              <!-- white box -->
+              <div
+                class="absolute max-xl:-top-10 xl:-bottom-12 left-1/2 -translate-x-1/2"
+              >
+                <div
+                  class="bg-white rounded-2xl abs-shadow flex items-center gap-3 lg:gap-5 py-3 px-4 lg:p-5"
+                >
+                  <div
+                    class="bg-[#EDFDF8] rounded-full size-14 flex justify-center items-center"
+                  >
+                    <img src="./src/image/true.svg" alt="icon" class="size-6" />
+                  </div>
+                  <p
+                    class="text-deemed text-15 xl:text-lg font-medium whitespace-nowrap"
+                  >
+                    Built by doctors, <br />
+                    backed by results
+                  </p>
+                </div>
+              </div>
+
+              <!-- blue box -->
+              <div
+                class="absolute -bottom-14 left-1/2 max-xl:-translate-x-1/2 xl:top-24 xl:left-[82%] w-full max-w-[80%] sm:max-w-72 lg:max-w-68 2xl:max-w-80"
+              >
+                <div
+                  class="bg-accent-dark-sky abs-shadow p-4 lg:p-5 rounded-2xl"
+                >
+                  <p class="text-white text-15 xl:text-lg font-medium">
+                    Thousands of junior doctors have already used us to gain an
+                    unfair advantage in the RACP exam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="lg:col-span-6 xl:col-span-5">
+            <div
+              class="text-deemed text-2xl xxs:text-26 md:text-3xl xxl:text-4xl leading-relaxed h-full flex items-center max-lg:text-center"
+            >
+              <p>
+                Developed specifically for the
+                <span class="font-bold">RACP exam</span>, our comprehensive
+                program combines deep medical expertise with smart learning
+                design to give you
+                <span class="font-bold"
+                  >structure, clarity, and confidence — every step of the
+                  way.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Have a question? -->
+    <div class="relative pt-20 pb-10 sm:py-20 md:py-20 xl:py-24 2xl:py-28">
+      <div class="container">
+        <div
+          class="relative grid grid-cols-1 lg:grid-cols-12 gap-20 lg:gap-8 xl:gap-0 2xl:px-6"
+        >
+          <div class="max-lg:order-2 lg:col-span-6">
+            <div
+              class="px-5 max-sm:pb-8 lg:pr-5 xl:px-20 h-full flex items-center max-lg:text-center"
+            >
+              <div
+                class="text-deemed text-2xl xxs:text-26 md:text-3xl xxl:text-4xl leading-relaxed"
+              >
+                <p>
+                  Top Physician is the only online course developed specifically
+                  for trainees in
+                  <span class="font-bold"> Australia and New Zealand </span
+                  >preparing for the RACP exams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-lg:order-1 max-sm:w-full max-lg:mx-auto lg:col-span-6"
+          >
+            <div
+              class="lg:ml-auto relative bg-[#D5F0E8] rounded-20 md:rounded-4xl max-sm:w-full max-sm:h-full sm:w-400 sm:min-h-400 lg:w-[450px] lg:h-[450px] xxl:!size-[522px] flex justify-center pt-20 px-6 lg:pt-8 2xl:pt-12 lg:px-12 xl:mr-5 xxl:mr-7"
+            >
+              <div class="flex flex-col justify-center items-center">
+                <!-- doctor image -->
+                <div class="h-fit w-full lg:w-96 xl:w-80 xxl:w-[429px]">
+                  <img
+                    src="./src/image/doctor2.svg"
+                    alt="doctor"
+                    class="w-full h-full"
+                  />
+                </div>
+
+                <!-- detail box -->
+                <div class="w-full max-lg:-mb-[10%] xxl:-mt-9">
+                  <div class="bg-white abs-shadow p-4 lg:p-6 rounded-2xl">
+                    <p
+                      class="text-deemed text-15 lg:text-base xxl:text-lg font-medium leading-170"
+                    >
+                      While our competitors persist with outdated formats, we’ve
+                      introduced brand new upgrades for 2025 - making our
+                      program more effective and efficient than ever before.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- gradient box -->
+              <div
+                class="w-[80%] rounded-20 md:rounded-4xl absolute -top-5 -bottom-5 -right-5 xxl:-top-7 xxl:-bottom-7 xxl:-right-7 -z-1 bg-gradient-to-l from-[#EEFDF9] to-[#EFF7FF] max-xl:hidden"
+              ></div>
+
+              <!-- white box -->
+              <div
+                class="absolute -top-10 xl:top-16 xl:-bottom-12 left-1/2 max-xl:-translate-x-1/2 xl:-left-44"
+              >
+                <div
+                  class="bg-white rounded-2xl abs-shadow flex xl:flex-col max-xl:justify-center items-center max-xl:gap-2 py-3 px-4 lg:p-5"
+                >
+                  <div
+                    class="rounded-full size-12 xl:size-60px border-2 border-white overflow-hidden xl:mb-3"
+                  >
+                    <img
+                      src="./src/image/doctor-madam.jpg"
+                      alt="icon"
+                      class="w-full h-full"
+                    />
+                  </div>
+                  <div class="flex-1 text-center flex flex-col">
+                    <span
+                      class="text-background text-base md:text-lg 2xl:text-xl font-medium mb-2.5"
+                      >Have a question?</span
+                    >
+
+                    <a
+                      href="mailto:hello@topphysician.com.au"
+                      class="text-[#878787] hover:text-accent-dark-sky text-[13px] xl:text-15 font-medium whitespace-nowrap transition-all duration-300"
+                    >
+                      hello@topphysician.com.au
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="block sm:hidden lg:block absolute top-0 sm:-top-10 sm:-bottom-10 xxl:-top-16 xxl:-bottom-16 left-0 xl:left-7 -z-2 max-sm:h-full w-full sm:w-[79%] rounded-20 border border-[#E0EBF5]"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Most Comprehensive RACP Prep Available -->
+    <div class="pt-20 pb-10 sm:py-20 md:py-20 xl:py-24 2xl:py-28">
+      <div class="container">
+        <div
+          class="relative rounded-20 md:rounded-4xl bg-accent flex flex-col gap-5 md:gap-14 !pb-0 p-4 sm:p-8 xxl:p-12"
+        >
+          <div
+            class="w-full flex max-md:flex-col items-center max-md:text-center max-md:gap-3"
+          >
+            <div class="w-full md:w-1/2">
+              <h3
+                class="text-background text-3xl md:text-4xl xl:text-5.5 2xl:text-50 font-bold capitalize"
+              >
+                The Most Comprehensive RACP Prep Available
+              </h3>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="ml-auto md:w-5/6 xl:w-2/3">
+                <p class="text-base md:text-lg xxl:text-xl 2xl:pr-10">
+                  Top Physician isn&apos;t just another training tool it&apos;s
+                  your all in one preparation platform.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- counter -->
+          <div
+            class="flex max-md:flex-col gap-3.5 sm:gap-5 xl:gap-8 2xl:gap-12"
+          >
+            <div
+              class="flex-1 border border-[#B4CEE7] rounded-20 md:rounded-3xl py-4 md:py-5 xxl:py-7 px-6 xxl:px-10 flex flex-col gap-2 md:gap-3 2xl:gap-6"
+            >
+              <span
+                class="text-[#6498CA] text-[28px] sm:text-3xl xl:text-4xl 2xl:text-40 font-extrabold"
+                >19 Core</span
+              >
+              <p class="block text-17 xl:text-lg 2xl:text-xl capitalize">
+                Medical Disciplines
+              </p>
+            </div>
+            <div
+              class="flex-1 border border-[#B4CEE7] rounded-20 md:rounded-3xl py-4 md:py-5 xxl:py-7 px-6 xxl:px-10 flex flex-col gap-2 md:gap-3 2xl:gap-6"
+            >
+              <span
+                class="text-[#6498CA] text-[28px] sm:text-3xl xl:text-4xl 2xl:text-40 font-extrabold"
+                >100+</span
+              >
+              <p class="block text-17 xl:text-lg 2xl:text-xl capitalize">
+                Expertly Designed Lessons
+              </p>
+            </div>
+            <div
+              class="flex-1 border border-[#B4CEE7] rounded-20 md:rounded-3xl py-4 md:py-5 xxl:py-7 px-6 xxl:px-10 flex flex-col gap-2 md:gap-3 2xl:gap-6"
+            >
+              <span
+                class="text-[#6498CA] text-[28px] sm:text-3xl xl:text-4xl 2xl:text-40 font-extrabold"
+                >Thousands</span
+              >
+              <p class="block text-17 xl:text-lg 2xl:text-xl capitalize">
+                Of Questions with Explanations
+              </p>
+            </div>
+          </div>
+
+          <!-- feature -->
+          <div
+            class="rounded-t-20 md:rounded-t-4xl bg-white px-4 pt-4 max-md:pb-24 md:py-12 md:px-8 xl:px-10 2xl:p-14 max-md:mt-3"
+          >
+            <div class="max-md:overflow-hidden max-md:overflow-x-auto">
+              <div
+                class="grid grid-cols-5 md:flex md:flex-wrap md:justify-center gap-x-3 md:gap-x-5 xxl:gap-x-7 gap-y-2 max-md:min-w-7xl"
+              >
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Cardiology.svg"
+                      alt="Cardiology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Cardiology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Immunology.svg"
+                      alt="Immunology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Immunology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Gastroenterology.svg"
+                      alt="Gastroenterology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Gastroenterology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Obstetric medicine.svg"
+                      alt="Obstetric medicine"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Obstetric medicine
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Respiratory.svg"
+                      alt="Respiratory"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Respiratory
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Oncology.svg"
+                      alt="Oncology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Oncology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Palliative care.svg"
+                      alt="Palliative care"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Palliative care
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Statistics.svg"
+                      alt="Statistics"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Statistics
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Neurology.svg"
+                      alt="Neurology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Neurology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Geriatrics.svg"
+                      alt="Geriatrics"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Geriatrics
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Hematology.svg"
+                      alt="Hematology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Hematology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Pharmacology.svg"
+                      alt="Pharmacology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Pharmacology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Nephrology.svg"
+                      alt="Nephrology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Nephrology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Endocrinology.svg"
+                      alt="Endocrinology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Endocrinology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Intensive care.svg"
+                      alt="Intensive care"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Intensive care
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Genetics.svg"
+                      alt="Genetics"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Genetics
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Rheumatology.svg"
+                      alt="Rheumatology"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Rheumatology
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/EBM.svg"
+                      alt="EBM"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    EBM
+                  </p>
+                </div>
+                <div
+                  class="w-60 md:w-60 xxl:w-68 2xl:w-[308px] border border-muted-blue rounded-20 p-2 flex items-center gap-3 xxl:gap-5"
+                >
+                  <div class="border-[#DDEAF6] border rounded-20 p-2 2xl:p-4">
+                    <img
+                      src="./src/image/Infectious disease.svg"
+                      alt="Infectious disease"
+                      class="object-contain"
+                    />
+                  </div>
+                  <p
+                    class="capitalize text-deemed text-base xxl:text-lg 2xl:text-xl font-medium"
+                  >
+                    Infectious disease
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- btn -->
+          <div
+            class="absolute bottom-0 md:-bottom-24 left-1/2 -translate-x-1/2"
+          >
+            <a
+              href="#"
+              class="inline-block whitespace-nowrap bg-accent-dark-green hover:bg-accent-dark-sky transition-all duration-300 py-3.5 px-8 xl:py-4 capitalize text-white text-lg xxl:text-22 font-semibold rounded-2xl xxl:rounded-20"
+              >Start for Free!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Built for Busy doctors-->
+    <div class="relative pt-12 sm:pt-14 md:pt-20 xxl:pt-32 2xl:pt-40 pb-5 sm:pb-10 md:14 xl:pb-20">
+      <div class="container">
+        <div class="relative  xl:px-10 xxl:px-14 xl:pb-10 xxl:pb-14">
+          <div class="grid grid-cols-1 xl:grid-cols-12">
+            <div class="xl:col-span-5">
+              <div class="h-full flex flex-col justify-center max-w-2xl xl:max-w-md max-xl:pb-7">
+                <h3
+                  class="text-background text-3xl md:text-4xl xl:text-5.5 2xl:text-50 font-bold md:text-left text-center capitalize xl:mb-5 mb-3">
+                  Built for <br class="hidden xl:block"> Busy Doctors
+                </h3>
+                <p class="text-base  lg:text-xl  md:text-left text-center">Instead of
+                  overwhelming you with content and hoping
+                  something sticks Top Physician uses a strategic learning sequence
+                  designed for better retention and recall.</p>
+              </div>
+            </div>
+            <div class="xl:col-span-7">
+              <div class="flex max-sm:flex-col gap-5">
+                <div class="bg-[#EEFDF9] flex-1 text-center py-6 px-5 xl:pt-9 xl:pb-4 xl:px-9 rounded-20 min-h-80 xl:min-h-[350px] 2xl:min-h-[420px] flex flex-col">
+                  <div class="block max-w-16 md:max-w-20 min-h-[89px] m-auto">
+                    <img src="./src/image/spaced-learning.svg" alt="spaced-learning" class="object-contain h-full w-full">
+                  </div>
+                  <div class="h-full mt-auto">
+                    <h5 class=" font-bold text-background text-xl  lg:text-22 mt-7 mb-3 lg:mt-6 lg:mb-4">
+                      Spaced learning</h5>
+                    <p class=" text-base  lg:text-lg leading-170">Content and questions
+                      are
+                      sequenced at optimal intervals to boost memory and long-term recall</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#fff] flex-1 abs-shadow text-center py-6 px-5 xl:pt-9 xl:pb-4 xl:px-9 rounded-20 min-h-80 xl:min-h-[350px] 2xl:min-h-[420px] flex flex-col">
+                  <div class="block max-w-20 m-auto">
+                    <img src="./src/image/custom-mini-exm.svg" alt="custom-mini-exam" class="object-contain h-full w-full">
+                  </div>
+                  <div class="h-full mt-auto">
+                    <h5 class=" font-bold text-background text-xl  lg:text-22  mt-7 mb-3 lg:mt-6 lg:mb-4">
+                      Custom mini-exams</h5>
+                    <p class=" text-base  lg:text-lg leading-170">Build your own practice
+                      tests by topic to target your weaknesses and sharpen specific areas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="mt-4 max-w-[990px] xxl:max-w-[1100px] 2xl:max-w-[1250px] ml-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div class=" bg-[#EEFDF9] text-center py-6 px-5 xl:pt-9 xl:pb-4 xl:px-9 rounded-20 min-h-80 xl:min-h-[350px] 2xl:min-h-[420px] flex flex-col">
+                <div class="block max-w-20 m-auto">
+                  <img src="./src/image/detail-explanation.svg" alt="detail-explanation"
+                    class="object-contain h-full w-full">
+                </div>
+                <div class="h-full mt-auto">
+    
+                  <h5 class=" font-bold text-background text-xl  lg:text-22  mt-7 mb-3 lg:mt-6 lg:mb-4">
+                    Detailed Explanations</h5>
+                  <p class=" text-base lg:text-lg ">Learn from every mistake with immediate, in depth explanations Going
+                    beyond right or wrong helps reinforce correct
+                    thinking</p>
+                </div>
+              </div>
+              <div class=" bg-[#fff] abs-shadow text-center py-6 px-5 xl:pt-9 xl:pb-4 xl:px-9 rounded-20 min-h-80 xl:min-h-[350px] 2xl:min-h-[420px] flex flex-col">
+                <div class="block max-w-20 m-auto">
+                  <img src="./src/image/practice-mock-exams.svg" alt="practice-mock-exams"
+                    class="object-contain h-full w-full">
+                </div>
+                <div class="h-full mt-auto">
+    
+                  <h5 class=" font-bold text-background text-xl  lg:text-22  mt-7 mb-3 lg:mt-6 lg:mb-4">Practice with
+                    Mock
+                    Exams</h5>
+                  <p class=" text-base  lg:text-lg leading-170">With our expertly written full-length mock exams modeled on real RACP
+                    exam formats you’ll walk into exam day fully
+                    prepared</p>
+                </div>
+              </div>
+              <div class=" bg-[#EEFDF9] text-center py-6 px-5 xl:pt-9 xl:pb-4 xl:px-9 rounded-20 min-h-80 xl:min-h-[350px] 2xl:min-h-[420px] flex flex-col">
+                <div class="block max-w-20 m-auto">
+                  <img src="./src/image/track-progress.svg" alt="track-progress" class="object-contain h-full w-full">
+                </div>
+                <div class="h-full mt-auto">
+    
+                  <h5 class=" font-bold text-background text-xl  lg:text-22  mt-7 mb-3 lg:mt-6 lg:mb-4">Track your
+                    progress</h5>
+                  <p class=" text-base  lg:text-lg leading-170">Our real-time analytics let you see exactly how you’re tracking by
+                    topic,
+                    question type, and progress compared to the
+                    cohort. No guesswork. No wasted time. Just a clear path to readiness</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- line -->
+          <div class="absolute -z-1 bottom-0 right-0 h-[78%] max-xl:hidden">
+            <img src="./src/image/busy-doc-vector.svg" alt="busy-doc-vector" class="h-full w-full">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+    <div class="relative py-6 sm:py-10 md:py-12 xxl:py-16 2xl:py-20">
+    <div class="container">
+      <div class="relative pl-5 md:px-8 xl:px-10 xxl:px-16">
+        <!-- background -->
+          <div class="absolute top-0 left-0 right-0 h-[60%] bg-accent -z-2 rounded-20 md:rounded-4xl"></div>
+
+        <!-- cards -->
+        <div class="py-8 md:py-10 xxl:py-14 text-center">
+          <h4 class="text-background text-3xl md:text-4xl xl:text-5.5 2xl:text-50 font-bold capitalize">testimonials</h4>
+        </div>
+        <div class="overflow-hidden overflow-x-auto">
+          <div class="grid grid-cols-12 gap-4 xl:gap-10 2xl:gap-16 max-lg:min-w-[888px]">
+            <div class="col-span-4">
+              <div class="relative h-full">
+                <div class="relative h-full pt-7 px-7 xxl:pt-12 xxl:px-12 pb-28 xl:pb-36">
+                  <div class="w-10 xl:w-14 mb-5 md:mb-7 xxl:mb-10">
+                    <img src="./src/image/Quote.svg" alt="quote" class="object-contain">
+                  </div>
+                  <div class="">
+                    <p class="text-lg xl:text-xl xxl:text-22 leading-relaxed">I've been using Top Physician throughout the year and it has been the most helpful resource.</p>
+                  </div>
+  
+                  <div class="absolute inset-0 -z-1">
+                    <img src="./src/image/testimonial-shape.svg" alt="shape" class="w-full h-full">
+                  </div>
+                </div>
+                <div class="absolute max-md:-bottom-1 bottom-0 left-0 w-1/2">
+                  <div class="flex items-center gap-4 pt-1">
+                    <div class="bg-[#DDE9F3] rounded-full size-14 md:size-10 xxl:size-60px flex justify-center items-end overflow-hidden pt-1">
+                      <img src="./src/image/tm1.svg" alt="icon" class="object-contain w-full h-full">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                      <span class="text-[#1F1F1F] text-base xl:text-lg font-semibold">Amy M</span>
+                      <p class="text-15 xl:text-base">Brisbane</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <div class="relative h-full">
+                <div class="relative h-full pt-7 px-7 xxl:pt-12 xxl:px-12 pb-28 xl:pb-36">
+                  <div class="w-10 xl:w-14 mb-5 md:mb-7 xxl:mb-10">
+                    <img src="./src/image/Quote.svg" alt="quote" class="object-contain">
+                  </div>
+                  <div class="">
+                    <p class="text-lg xl:text-xl xxl:text-22 leading-relaxed">It's a great resource and I've recommended it to my partner. The best part is the level of detail.</p>
+                  </div>
+  
+                  <div class="absolute inset-0 -z-1">
+                    <img src="./src/image/testimonial-shape.svg" alt="shape" class="w-full h-full">
+                  </div>
+                </div>
+                <div class="absolute max-md:-bottom-1 bottom-0 left-0 w-1/2">
+                  <div class="flex items-center gap-4 pt-1">
+                    <div class="bg-[#DDE9F3] rounded-full size-14 md:size-10 xxl:size-60px flex justify-center items-end overflow-hidden pt-1">
+                      <img src="./src/image/tm2.svg" alt="icon" class="object-contain w-full h-full">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                      <span class="text-[#1F1F1F] text-base xl:text-lg font-semibold capitalize">Jeremy K</span>
+                      <p class="text-15 xl:text-base capitalize">Wellington</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <div class="relative h-full">
+                <div class="relative h-full pt-7 px-7 xxl:pt-12 xxl:px-12 pb-28 xl:pb-36">
+                  <div class="w-10 xl:w-14 mb-5 md:mb-7 xxl:mb-10">
+                    <img src="./src/image/Quote.svg" alt="quote" class="object-contain">
+                  </div>
+                  <div class="">
+                    <p class="text-lg xl:text-xl xxl:text-22 leading-relaxed">Definitely a resource I would recommend to my colleagues starting preparation for the exam.</p>
+                  </div>
+  
+                  <div class="absolute inset-0 -z-1">
+                    <img src="./src/image/testimonial-shape.svg" alt="shape" class="w-full h-full">
+                  </div>
+                </div>
+                <div class="absolute max-md:-bottom-1 bottom-0 left-0 w-1/2">
+                  <div class="flex items-center gap-4 pt-1">
+                    <div class="bg-[#DDE9F3] rounded-full size-14 md:size-10 xxl:size-60px flex justify-center items-end overflow-hidden pt-1">
+                      <img src="./src/image/tm3.svg" alt="icon" class="object-contain w-full h-full">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                      <span class="text-[#1F1F1F] text-base xl:text-lg font-semibold">Paul D</span>
+                      <p class="text-15 xl:text-base">Sydney</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- satisfied user -->
+        <div class="w-fit mt-11 md:mt-14 xxl:mt-24 mx-auto">
+        <div class="rounded-2xl md:rounded-20 border border-[#D1EDFF] abs-shadow p-2.5 w-fit flex justify-center items-center gap-5">
+            <div class="bg-accent rounded-[14px] p-3.5 flex justify-center items-center size-60px md:size-[70px]">
+              <img src="./src/image/satisfied.svg" alt="satisfied" class="object-contain">
+            </div>
+            <p class="text-[#1F1F1F] text-xl md:text-2xl xxl:text-26 font-semibold">2K+ Satisfied Users</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- The Most Powerful Version of Top Physician Yet -->
+     <div class="relative py-6 sm:py-10 md:py-12 xxl:py-16 2xl:py-20">
+      <div class="container">
+        <div class="relative bg-accent-dark-sky rounded-20 md:rounded-4xl max-w-[1470px] mx-auto mb-10">
+          <div class="relative !overflow-hidden py-8 sm:py-10 md:py-14 xxl:py-16 px-6 md:px-10 xl:px-14 2xl:px-20 flex max-md:flex-col justify-between items-center max-md:text-center">
+            <!-- content -->
+            <div class="relative z-2 max-w-3xl max-md:pb-8 md:pr-10">
+              <h5 class="text-white text-3xl md:text-4xl xl:text-5.5 2xl:text-50 font-bold capitalize mb-3 md:mb-5 2xl:mb-9">The Most Powerful Version of Top Physician Yet</h5>
+              <div class="xxl:pr-56">
+                <p class="text-white text-base md:text-lg xxl:text-xxl leading-[175%] max-sm:px-2">Start your free trial and see how it can work for you. 
+                  Top Physician. Built by doctors. Backed by results.</p>
+              </div>
+            </div>
+            <div class="relative z-2">
+              <a href="#" class="inline-block whitespace-nowrap bg-accent-dark-green hover:bg-accent-dark-sky transition-all duration-300 py-3.5 px-8 xl:py-4 capitalize text-white text-lg xxl:text-22 font-semibold rounded-2xl xxl:rounded-20">Start for Free!</a>
+            </div>
+            <!-- blob -->
+            <div class="absolute bottom-0 right-0 xl:-right-[3%] w-3/5 max-md:h-1/3 md:w-[20%]">
+              <img src="./src/image/blob.svg" alt="blob" class="object-contain">
+            </div>
+            <!-- line -->
+            <div class="absolute -top-10 md:top-10 left-0 max-md:right-0 bottom-0 h-full md:w-[60%]">
+              <img src="./src/image/bg-line.svg" alt="icon-svg" class="object-contain w-full h-full max-md:scale-150">
+            </div>
+            <!-- rounde small -->
+            <div class="absolute max-md:-left-20 bottom-20 md:right-3/5 md:-bottom-12 w-28">
+              <img src="./src/image/bg-shape.svg" alt="icon-svg" class="object-contain w-full h-full">
+            </div>
+            <!-- top shape -->
+            <div class="absolute top-5 -right-8 max-md:rotate-90 md:right-2/6 md:top-0 w-9 h-20">
+              <img src="./src/image/top-shape.svg" alt="icon-svg" class="object-contain w-full h-full">
+            </div>
+          </div>
+
+          <!-- bottom shape  -->
+          <div class="absolute -bottom-[6%] left-1/2 -translate-x-1/2 w-[95%] h-full bg-[#C2E5FC] rounded-20 md:rounded-4xl -z-1"></div>
+          <div class="absolute -bottom-[10%] left-1/2 -translate-x-1/2 w-[88%] h-full bg-[#E9F6FF] rounded-20 md:rounded-4xl -z-2"></div>
+        
+        </div>
+      </div>
+     </div>
+
+    <!-- Pricing -->
+    <div class="relative overflow-hidden py-6 sm:py-8 md:py-10 xl:py-14 xxl:py-16 2xl:py-20">
+      <div class="container">
+        <div class="grid grid-cols-1 xl:grid-cols-12 gap-10 xxl:gap-16 xxl:px-12">
+          <!-- Left: Pricing Text -->
+          <div class="xl:col-span-4">
+            <div class="w-full xl:max-w-sm 2xl:pr-12 h-full flex flex-col justify-center max-md:text-center">
+              <h2
+                class="text-background text-3xl md:text-4xl xl:text-5.5 2xl:text-50 font-bold capitalize mb-3 md:mb-5 2xl:mb-7"
+              >
+                Pricing
+              </h2>
+              <p class="text-base lg:text-lg xxl:text-xl mb-2">
+                Unlock the #1 RACP Prep Platform<br class="hidden sm:block" />
+                Join the doctors already passing with confidence.
+              </p>
+            </div>
+          </div>
+          <!-- Right: Pricing Cards -->
+          <div class="xl:col-span-8">
+            <div class="w-full xl:max-w-[888px] mx-auto relative">
+              <!-- background round -->
+              <div class="bg-accent-light-green rounded-full w-[110%] h-[75%] md:size-[95%] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
+              <!-- cards -->
+              <div class="flex flex-col md:flex-row gap-5 xl:mb-[105px]">
+                <!-- All-Access Card -->
+                <div class="flex-1 h-full bg-white border border-[#D1EDFF] rounded-20 md:rounded-4xl abs-shadow" >
+                  <div class="pt-5 pb-8 md:pt-9 px-5 xxs:px-7 md:pb-12 flex flex-col items-center">
+                    <div class="mb-5 md:mb-6 2xl:mb-8">
+                      <h3 class="text-background text-22 xl:text-26 font-semibold">
+                        All-Access
+                      </h3>
+                    </div>
+                    <hr class="w-full border-t border-[#E8EFF5] mb-5 lg:mb-7" />
+                    <div class="flex flex-row justify-center items-center gap-2 mb-8 xxl:mb-10">
+                      <p
+                        class="text-accent-dark-sky text-40 md:text-[44px] 2xl:text-50 font-bold mb-1"
+                      >
+                        $250
+                      </p>
+                      <span class="text-base xl:text-lg">/ Month</span>
+                    </div>
+                    <ul class="flex flex-col justify-center gap-6 xxl:gap-7 mb-7 md:mb-10 xxl:mb-12">
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        100 High Impact Lessons
+                      </li>
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        19 Specialties Covered
+                      </li>
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        Your Own Smart Dashboard
+                      </li>
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        Expert Level Mock Exams
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="inline-block bg-accent-dark-green hover:bg-accent-dark-sky transition-all duration-300 py-3.5 px-8 xl:py-4 capitalize text-white text-lg xxl:text-22 font-semibold rounded-2xl xxl:rounded-20"
+                      >Choose Plan</a
+                    >
+                  </div>
+                </div>
+                <!-- Annual Saver Card -->
+                <div
+                  class="flex-1 h-full bg-white border border-[#D1EDFF] rounded-20 md:rounded-4xl abs-shadow xl:mt-[105px]"
+                >
+                  <div class="pt-5 pb-8 md:pt-9 px-5 xxs:px-7 md:pb-12 flex flex-col items-center">
+                    <div class="mb-5 md:mb-6 2xl:mb-8">
+                      <h3 class="text-background text-22 xl:text-26 font-semibold">
+                        Annual Saver
+                    </div>
+                    </h3>
+                    <hr class="w-full border-t border-[#E8EFF5] mb-5 lg:mb-7" />
+                    <div class="flex flex-row justify-center items-center gap-2 mb-8 xxl:mb-10">
+                      <p
+                        class="text-accent-dark-sky text-40 md:text-[44px] 2xl:text-50 font-bold mb-1"
+                      >
+                        $1800
+                      </p>
+                      <span class="text-base xl:text-lg"
+                        >/ Annual <br />
+                        (One off payment)
+                      </span>
+                    </div>
+                    <ul class="flex flex-col justify-center gap-6 xxl:gap-7 mb-7 md:mb-10 xxl:mb-12">
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        100 High Impact Lessons
+                      </li>
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        19 Specialties Covered
+                      </li>
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        Your Own Smart Dashboard
+                      </li>
+                      <li
+                        class="flex items-center gap-2 text-base xxs:text-lg xxl:text-xl font-medium capitalize"
+                      >
+                        <span class="size-5"
+                          ><img
+                            src="./src/image/tick-circle.svg"
+                            alt="circle"
+                            class="w-full h-full"
+                        /></span>
+                        Expert Level Mock Exams
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="inline-block bg-accent-dark-green hover:bg-accent-dark-sky transition-all duration-300 py-3.5 px-8 xl:py-4 capitalize text-white text-lg xxl:text-22 font-semibold rounded-2xl xxl:rounded-20"
+                      >Choose Plan</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- line -->
+       <div class="absolute w-full top-10 lg:bottom-16 -z-1">
+        <img src="./src/image/pricing-line.svg" alt="line" class="w-full h-full hidden lg:block">
+        <img src="./src/image/pricing-line-mobile.svg" alt="line" class="w-full h-full block lg:hidden">
+       </div>
+    </div>
+
+    <!-- footer -->
+     <footer class="relative px-[30px]">
+      <div class="relative bg-accent w-full max-w-[1900px] mx-auto rounded-20 md:rounded-b-4xl">
+        <!-- blue box -->
+        <div class="absolute -top-2 md:-top-3 left-1/2 -translate-x-1/2 -z-1 bg-accent-dark-sky w-full max-w-[82%] sm:max-w-[88%] h-full mx-auto rounded-20 md:rounded-b-4xl"></div>
+
+        <!-- content -->
+        <div class="container">
+          <div class="relative z-2 pt-8 sm:pt-14 md:pt-10 xl:pt-28 xxl:pt-32 2xl:pt-36 pb-8 sm:pb-10 md:pb-14 xl:pb-20 xxl:pb-24 2xl:pb-28">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-7 md:gap-8 lg:gap-10 xl:gap-5">
+              <div class="md:col-span-12 xl:col-span-3 2xl:col-span-4">
+                <div class="w-full xl:max-w-xs">
+                  <a href="#" class="block w-[180px] md:w-56 xxl:w-64 mb-5 xl:mb-10 xxl:mb-14">
+                    <img src="./src/image/logo-head.png" alt="icon-logo" class="w-full h-full">
+                  </a>
+                  <p class="text-[#57656F] text-base xl:text-lg">Your all in one RACP exam preparation platform.</p>
+                </div>
+              </div>
+              <div class="md:col-span-6 lg:col-span-7 xl:col-span-5 2xl:col-span-5">
+                <div class="flex max-xxs:flex-col gap-5">
+                  <div class="flex-1 xl:pl-10 2xl:pl-0">
+                    <div class="mb-5 md:mb-8 xxl:mb-10">
+                      <h6 class="text-background capitalize font-bold text-lg md:text-xl xxl:text-2xl">Medical </h6>
+                    </div>
+                    <ul class="space-y-5 md:space-y-8 xxl:space-y-10">
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Clinical Trials</a> </li>
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Refer a Patient</a> </li>
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Supplier Information</a> </li>
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Degree Programs</a> </li>
+                    </ul>
+                  </div>
+                  <div class="flex-1 xl:pl-10 2xl:pl-0">
+                    <div class="mb-5 md:mb-8 xxl:mb-10">
+                      <h6 class="text-background capitalize font-bold text-lg md:text-xl xxl:text-2xl">Researchers</h6>
+                    </div>
+                    <ul class="space-y-5 md:space-y-8 xxl:space-y-10">
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Research Faculty</a> </li>
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Laboratories</a> </li>
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Appointments</a> </li>
+                      <li> <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg transition-all duration-300">Price Transparency</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="md:col-span-6 lg:col-span-5 xl:col-span-4 2xl:col-span-3">
+
+                <div class="relative max-xxs:px-3 p-5 md:py-9 md:px-6 xl:ml-10 xxl:ml-12 2xl:ml-0">
+                  <!-- mail -->
+                  <div class="relative z-2 flex flex-col gap-5 sm:gap-8">
+                    <div class="w-2/3">
+                      <label for="email" class="text-[#DCE7EE] text-base md:text-lg capitalize">Email</label>
+                    </div>
+                    <a href="mailto:admin@topphysician.com.au" class="text-white max-xxs:text-[13px] text-lg xl:text-xl font-semibold lowercase hover:text-accent-dark-green break-words transition-all duration-300">admin@topphysician.com.au</a>
+                  </div>
+
+                  <!-- arrow -->
+                   <div class="absolute top-0 right-0">
+                     <div class="bg-accent-dark-green rounded-full flex justify-center items-center max-xxs:size-9 size-11 md:size-12 lg:size-14">
+                       <img src="./src/image/arrow-right.svg" alt="arrow-right" class="w-6 xl:w-8">
+                     </div>
+                   </div>
+                  <!-- background shape -->
+                  <div class="absolute inset-0 z-0">
+                    <img src="./src/image/email-shape.svg" alt="email-shape" class="w-full h-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class=""bg-[#D2DFE8] h-px w-full>
+          <div class="relative z-2 flex max-sm:flex-col justify-between items-center gap-3 md:gap-5 py-7 md:py-10">
+            <p class="text-[#57656F] text-15 xl:text-lg max-sm:text-center">© Top Physician. All rights reserved.</p>
+            <ul>
+              <li>
+                <a href="#" class="capitalize text-[#57656F] hover:text-accent-dark-green text-15 xl:text-lg max-sm:text-center transition-all duration-300">terms & conditions  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- footer shape -->
+        <div class="absolute left-0 bottom-24 w-14 md:w-16 xxl:w-20">
+          <img src="./src/image/footer-round-shape.svg" alt="shape" class="w-full h-full">
+        </div>
+      </div>
+     </footer>
+
+    <!-- ✅ Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="./src/js/custom.js" defer></script>
+  </body>
+</html>

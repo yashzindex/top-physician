@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "panton-trialbold";
+  src: url("src/fonts/panton-trial-bold-webfont.woff2") format("woff2"),
+    url("src/fonts/panton-trial-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-deemed: var(--deemed);
+  --color-muted-blue: var(--muted-blue);
+  --color-accent-light-green: var(--accent-light-green);
+  --color-accent-dark-sky: var(--accent-dark-sky);
+  --color-accent-dark-green: var(--accent-dark-green);
+
+  --breakpoint-xxs: 389px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1440px;
+  --breakpoint-2xl: 1600px;
+
+  --text-15: 15px;
+  --text-17: 17px;
+  --text-22: 22px;
+  --text-26: 26px;
+  --text-40: 40px;
+  --text-5.5: 46px;
+  --text-50: 50px;
+  --text-6.5: 68px;
+  --text-7.5: 80px;
+
+  --radius-20: 20px;
+
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 3;
+  --z-4: 4;
+  --z-5: 5;
+
+  /* ✅ Font variable */
+  --font-lexend: "Lexend", sans-serif;
+  --font-panton: "panton-trialbold", sans-serif;
+
+  /* Addeding Leading Variables */
+  --leading-170: 170%;
+  --leading-180: 180%;
+
+  --size-60px: 60px;
+  --spacing-400: 400px;
+  --max-w-400: 400px;
+
+}
+@layer base {
+  :root {
+    --background: #101010;
+    --foreground: #545454;
+    --accent: #f3f9fe;
+    --deemed: #363636;
+    --muted-blue: #CEDFF0;
+    --accent-light-green: #eefdf9;
+    --accent-dark-sky: #6498ca;
+    --accent-dark-green: #69cfb2;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply text-foreground font-normal transition-colors duration-300;
+    font-family: var(--font-lexend);
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 18px;
+
+  @media (width >= 390px) {
+    max-width: 100%;
+  }
+  @media (width >= 640px) {
+    max-width: 100%;
+  }
+  @media (width >= 768px) {
+    max-width: 756px;
+  }
+  @media (width >= 1024px) {
+    max-width: 976px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1236px;
+  }
+  @media (width >= 1440px) {
+    max-width: 1396px;
+  }
+  @media (width >= 1600px) {
+    max-width: 1566px;
+  }
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility header-shadow {
+  box-shadow: 2px 3px 30px 0 rgba(180, 206, 222, 0.10);
+}
+
+@utility ham-shadow {
+  @apply relative;
+  box-shadow: 2px 3px 30px 0 rgba(180, 206, 222, 0.1);
+}
+
+@utility log-in-btn-shadow {
+  @apply relative;
+  box-shadow: 2px 3px 30px 0 rgba(105, 207, 178, 0.11);
+}
+
+@utility abs-shadow {
+  @apply relative;
+  box-shadow: 2px 3px 30px 0 rgba(1, 114, 187, 0.08);
+}
+
+@utility leftZero {
+  left: 0 !important;
+}
