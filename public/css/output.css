@@ -495,6 +495,9 @@
     width: var(--size-60px);
     height: var(--size-60px);
   }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -665,11 +668,17 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -688,6 +697,9 @@
   }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -755,6 +767,9 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-\[\#526470\] {
+    border-color: #526470;
+  }
   .border-\[\#B4CEE7\] {
     border-color: #B4CEE7;
   }
@@ -763,6 +778,9 @@
   }
   .border-\[\#D7E6F5\] {
     border-color: #D7E6F5;
+  }
+  .border-\[\#DCE7EE\] {
+    border-color: #DCE7EE;
   }
   .border-\[\#DDEAF6\] {
     border-color: #DDEAF6;
@@ -851,6 +869,9 @@
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-3\.5 {
     padding: calc(var(--spacing) * 3.5);
@@ -1115,10 +1136,24 @@
       display: none;
     }
   }
+  .hover\:bg-accent-dark-green {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-accent-dark-green);
+      }
+    }
+  }
   .hover\:bg-accent-dark-sky {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-accent-dark-sky);
+      }
+    }
+  }
+  .hover\:bg-accent-light-green {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-accent-light-green);
       }
     }
   }
@@ -1783,6 +1818,11 @@
   .md\:justify-center {
     @media (width >= 768px) {
       justify-content: center;
+    }
+  }
+  .md\:justify-end {
+    @media (width >= 768px) {
+      justify-content: flex-end;
     }
   }
   .md\:gap-3 {
