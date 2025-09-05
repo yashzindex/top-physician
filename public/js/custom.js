@@ -1,26 +1,25 @@
 
-$(document).ready(function () {
-  // Menu Button
-  let menu = $("#menu-toggle");
-  let navMenu = $("#nav-menu");
 
-  // Toggle menu on hamburger click
-  menu.click(function () {
-    $(this).toggleClass("open");
-    $(navMenu).toggleClass("leftZero");
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-    // Toggle body overflow
-    if ($(navMenu).hasClass("leftZero")) {
-      $("body").css("overflow", "hidden"); // prevent scrolling
+  menu.addEventListener("click", () => {
+    menu.classList.toggle("open");
+    navMenu.classList.toggle("leftZero");
+
+    if (navMenu.classList.contains("leftZero")) {
+      document.body.style.overflow = "hidden"; // prevent scrolling
     } else {
-      $("body").css("overflow", ""); // reset to default
+      document.body.style.overflow = ""; // reset to default
     }
   });
 
-  // Close menu when a nav link is clicked
-  $("#nav-menu a").click(function () {
-    menu.removeClass("open"); // reset hamburger state
-    navMenu.removeClass("leftZero"); // hide nav
-    $("body").css("overflow", ""); // allow scrolling again
+  navMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      navMenu.classList.remove("leftZero");
+      document.body.style.overflow = "";
+    });
   });
 });
