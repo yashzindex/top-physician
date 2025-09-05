@@ -7,7 +7,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "postcss src/css/input.css -o  public/output.css --minify",
-    "watch": "postcss src/css/input.css -o  public/output.css --watch"
+    "build": "postcss src/css/input.css -o  src/css/output.css --minify",
+    "watch": "postcss src/css/input.css -o  src/css/output.css --watch"
   }
 }
