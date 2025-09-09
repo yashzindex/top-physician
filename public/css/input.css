@@ -1,13 +1,47 @@
 @import "tailwindcss";
 
+
 @font-face {
+  font-family: "panton-trialblack";
+  src: url("../fonts/panton-trial-black-webfont.woff2") format("woff2"),
+    url("../fonts/panton-trial-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* if need to use other font weights */
+
+/* @font-face {
   font-family: "panton-trialbold";
   src: url("../fonts/panton-trial-bold-webfont.woff2") format("woff2"),
     url("../fonts/panton-trial-bold-webfont.woff") format("woff");
-  font-weight: 800;
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
+
+@font-face {
+  font-family: "panton-trialregular";
+  src: url("../fonts/panton-trial-regular-webfont.woff2") format("woff2"),
+    url("../fonts/panton-trial-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "panton-trialheavy";
+  src: url("../fonts/panton-trial-heavy-webfont.woff2") format("woff2"),
+    url("../fonts/panton-trial-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "panton-trialsemibold";
+  src: url("../fonts/panton-trial-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/panton-trial-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
 
 @theme {
   --color-background: var(--background);
@@ -47,7 +81,11 @@
 
   /* ✅ Font variable */
   --font-lexend: "Lexend", sans-serif;
-  --font-panton: "panton-trialbold", sans-serif;
+  --font-pantonBlack: "panton-trialblack", sans-serif;
+  --font-pantonBold: "panton-trialbold", sans-serif;
+  --font-pantonNormal: "panton-trialregular", sans-serif;
+  --font-pantonMedium: "panton-trialheavy", sans-serif;
+  --font-pantonSemiBold: "panton-trialsemibold", sans-serif;
 
   /* Addeding Leading Variables */
   --leading-170: 170%;
