@@ -120,7 +120,7 @@
   }
 
   body {
-    @apply text-foreground font-normal transition-colors duration-300;
+    @apply text-foreground font-light transition-colors duration-300;
     font-family: var(--font-lexend);
   }
 }
