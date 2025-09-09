@@ -20,6 +20,14 @@
 }
 
 /* @font-face {
+    font-family: 'panton-triallight';
+    src: url('../fonts/panton-trial-light-webfont.woff2') format('woff2'),
+         url('../fonts/panton-trial-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
   font-family: "panton-trialregular";
   src: url("../fonts/panton-trial-regular-webfont.woff2") format("woff2"),
     url("../fonts/panton-trial-regular-webfont.woff") format("woff");
@@ -112,7 +120,7 @@
   }
 
   body {
-    @apply text-foreground !font-normal transition-colors duration-300;
+    @apply text-foreground font-normal transition-colors duration-300;
     font-family: var(--font-lexend);
   }
 }
